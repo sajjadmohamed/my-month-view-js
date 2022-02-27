@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+h1 {
+	font-family: "Indie Flower", cursive;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+.other {
+	color: #474747;
+	background-color: #f0f0f0;
+}
+.old {
+	background: #e5fae1;
+	color: #424242;
+}
+.done {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: green;
+	font-size: 2em;
+}
+.month {
+	max-width: 1090px;
+	display: grid;
+	grid-template:
+		"day day day day day day day"
+		"day day day day day day day" "day day day day day day day"
+		"day day day day day day day" "day day day day day day day";
+}
+li {
+	name: "day";
+	list-stye: none;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 20px 10px;
+	position: relative;
+}
+.today {
+	background-color: #d4eefc;
+	border-color: #3981a8;
+	border-width: 3px;
+}
